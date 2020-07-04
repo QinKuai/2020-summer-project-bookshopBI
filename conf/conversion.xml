@@ -3,10 +3,13 @@
     <!-- 漏斗的所有URL正则表达式，具体值根据实际情况而定 -->
     <urls>
         <!--漏斗的第1个URL的正则表达式-->
-        <url>url1</url>
+<!--        -->
+        <url>.*bookstore/book/info.*</url>
         <!--漏斗的第2个URL的正则表达式-->
-        <url>url2</url>
+<!--        支付URL-->
+        <url>.*bookstore/order/payPage.*</url>
         <!--漏斗的第3个URL的正则表达式-->
-        <url>url3</url>
+<!--        支付成功-->
+        <url>.*bookstore/payment.*</url>
     </urls>
 </root>

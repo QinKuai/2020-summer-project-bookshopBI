@@ -19,7 +19,7 @@ def resolve_conf(type, dt):
     for ele in rootEle.getChildren():
         if ele.tag == 'url':
             url = ele.text.strip()
-            if url != None or url != '':
+            if url != None and url != '':
                 print(url)
                 urls.append(url)
 
