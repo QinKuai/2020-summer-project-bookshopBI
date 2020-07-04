@@ -1,4 +1,4 @@
-from com.utils import HiveUtil
+from com.utils.HiveUtil import HiveUtil
 
 
 def extract_data(start, end):
