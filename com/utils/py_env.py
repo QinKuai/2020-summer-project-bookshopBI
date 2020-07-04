@@ -12,7 +12,7 @@ PROJECT_TMP_DIR = PROJECT_DIR + "temp/"
 
 # ***********************************************************
 # Hadoop相关路径
-HADOOP_HOME = "/home/hadoop/hadoop-3.1.3"
+HADOOP_HOME = "/home/hadoop/hadoop-3.1.3/"
 HADOOP_PATH = HADOOP_HOME + "bin/"
 
 # ***********************************************************
