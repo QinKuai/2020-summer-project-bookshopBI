@@ -16,7 +16,7 @@ def resolve_conf():
     # 用来保存漏斗的URL的集合
     urls = []
 
-    for ele in rootEle.getChildren():
+    for ele in rootEle.getchildren():
         if ele.tag == 'url':
             url = ele.text.strip()
             if url != None and url != '':
