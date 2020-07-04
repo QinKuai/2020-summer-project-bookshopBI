@@ -15,4 +15,4 @@ if __name__ == '__main__':
     for hql in hqls:
         print(hql)
 
-        HiveUtil.execute_shell(hql)
+        print(HiveUtil.execute_shell(hql))
