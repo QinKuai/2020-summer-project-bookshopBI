@@ -4,7 +4,7 @@ from com.utils.py_env import PROJECT_CONF_DIR
 import xml.etree.ElementTree as ET
 
 
-def resolve_conf(type, dt):
+def resolve_conf():
     # 配置文件的路径
     confFile = PROJECT_CONF_DIR + "conversion.xml"
 
