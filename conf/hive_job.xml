@@ -3,16 +3,16 @@
     <!-- 表示可执行的type -->
     <job type="analysis">
         <!--将查询导出一个文件-->
-<!--        <hql>"select * from test.book_category" > abc.txt</hql>-->
+        <hql>"select * from test.book_category" > abc.txt</hql>
 
         <!--导出到HDFS-->
-<!--        <hql>"insert overwrite directory '/data/warehouse/book_category' select * from test.book_category"</hql>-->
+        <hql>"insert overwrite directory '/data/warehouse/book_category' select * from test.book_category"</hql>
 
         <!--导出到另外的hive表-->
-<!--        <hql>"insert into table test.temp select orderid,userid,orderdate from test.orders where status=0"</hql>-->
+        <hql>"insert into table test.temp select orderid,userid,orderdate from test.orders where status=0"</hql>
 
 <!--        Test HQL-->
-        <hql>"select * from test.book_category limit 5"</hql>
+<!--        <hql>"select * from test.book_category limit 5"</hql>-->
     </job>
 
     <!-- 使用HQL进行数据清洗 -->
