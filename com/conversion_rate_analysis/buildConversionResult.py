@@ -9,9 +9,9 @@ def get_result(start, end, output):
     dt = start + "-" + end
 
     # 删除作业成功的标志文件和作业的日志文件
-    shell = HADOOP_PATH + "hadoop fs -rm -f -r" + output + "/_SUCCESS"
+    shell = HADOOP_PATH + "hadoop fs -rm -f -r " + output + "/_SUCCESS"
     os.system(shell)
-    shell = HADOOP_PATH + "hadoop fs -rm -f -r" + output + "/_logs"
+    shell = HADOOP_PATH + "hadoop fs -rm -f -r " + output + "/_logs"
     os.system(shell)
 
     # 将临时结果加载到中间结果表
