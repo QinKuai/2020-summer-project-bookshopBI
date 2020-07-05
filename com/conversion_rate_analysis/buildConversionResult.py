@@ -15,12 +15,12 @@ def get_result(start, end, output):
     os.system(shell)
 
     # 将临时结果加载到中间结果表
-    hql = "\"load data inpath '" + output + "' overwrite into table conversion_middle_result partition (dt= " + dt + ")\""
+    hql = "\"load data inpath '" + output + "' overwrite into table conversion_middle_result partition (dt= '" + dt + "')\""
     HiveUtil.execute_shell(hql)
 
     # 对中间结果进行汇总，并写入到最终结果表
     hql = "\"insert into table conversion_result " \
-          "partition (dt='" + start + "-" + end + "') " \
+          "partition (dt='" + dt + "') " \
             "select process,count(process),count(distinct(uuid)) " \
-            "from conversion_middle_result where dt = " + dt + "group by process\""
+            "from conversion_middle_result where dt = '" + dt + "' group by process\""
     HiveUtil.execute_shell(hql)
