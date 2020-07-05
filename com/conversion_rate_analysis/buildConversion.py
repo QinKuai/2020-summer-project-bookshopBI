@@ -7,6 +7,7 @@ import xml.etree.ElementTree as ET
 def resolve_conf():
     # 配置文件的路径
     confFile = PROJECT_CONF_DIR + "conversion.xml"
+    # confFile =  "E:\\2020-summer-project\\2020-summer-project-bookshopBI\\conf\\" + "conversion.xml"
 
     # 解析配置文件
     xmlTree = ET.parse(confFile)
