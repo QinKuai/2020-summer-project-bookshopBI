@@ -20,4 +20,4 @@ if __name__ == '__main__':
     buildConversionHadoopShell.count_urls(start, end, urls)
 
     # 对中间结果进行汇总并得到最后结果表
-    buildConversionResult.get_result(start, end)
+    buildConversionResult.get_result(start, end, "/user/hive/warehouse/conversion_out")
